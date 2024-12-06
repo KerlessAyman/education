@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="CSS/myProfile.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button><a href="login.html" class="profile-link">Log Out<ion-icon name="log-out"></ion-icon></a></button>
+        </nav>
+        <h1>My Profile</h1>
+    </header>
+
+    <main class="profile-main">
+        <!-- User Information Section -->
+        <section class="user-info">
+            <h2>Welcome, <span id="username">John Doe</span>!</h2>
+            <p>Email: <span id="user-email">johndoe@example.com</span></p>
+            <p>Member Since: <span id="member-since">January 2023</span></p>
+        </section>
+
+        <!-- Enrolled Courses Section -->
+        <section class="enrolled-courses">
+            <h2>Your Enrolled Courses</h2>
+            <div class="course">
+                <img src="Pictures/Arabic.jpg" alt="Arabic Course">
+                <div class="course-details">
+                    <h2>Arabic</h2>
+                    <p>Progress: 50%</p>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="Pictures/english.webp" alt="English Course">
+                <div class="course-details">
+                    <h2>English</h2>
+                    <p>Progress: 70%</p>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="Pictures/math.avif" alt="Math Course">
+                <div class="course-details">
+                    <h2>Math</h2>
+                    <p>Progress: 30%</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="Javascript/myProfile.js"></script>
+</body>
+
+</html>

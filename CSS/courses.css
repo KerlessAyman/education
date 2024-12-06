@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+}
+img{
+    position: absolute;
+    width: 450px;
+    left: 0;
+    margin-top: 10%;
+
+}
+
+/* Header */
+header {
+    background-color: #383848;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Video */
+video {
+    width: 80%;
+    max-width: 800px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Button */
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #39415b;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #1c4bd7;
+}
+
+/* Links */
+a {
+    color: #1c4bd7;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+/* footer start */
+#footer {
+    background: #383848;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+}
+#footer a {
+    color: #fff;
+}
+
+/* footer end */

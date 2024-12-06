@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../Pictures/login.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+h2{
+    font-size: 2em;
+    color:rgb(250, 247, 247);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+p{
+    font-size: 16px;
+    color:rgb(255, 251, 251);
+    margin-left: 10%;
+    margin-top: 5%;
+}
+a{
+    color:rgb(218, 185, 238);
+}
+
+aside{
+    font-size: 25px;
+    margin:15px ;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    height: 100px;
+    
+}
+.input-box{
+    position: relative;
+    width: 310;
+    margin: 30px;
+    border-bottom: 2px solid #fff;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+}
+input:focus~label,
+input:valid~label{
+    top: -5px;
+}
+.input-box input{
+   width: 100%;
+   height: 50px;
+   background: transparent;
+   border-bottom: 2px solid #fff;
+   outline: none ;
+   font-size: 1em;
+   color: #fff;
+}
+button{
+    width: 80%;
+    height: 40px;
+    margin-left: 11%;
+    margin-top: 5%;
+    background: #fff;
+    border: none;
+    outline: none;
+      border-radius: 40px;
+      cursor: pointer;
+      font-size: 1em;
+      color: black;
+      font-weight: 500;
+      
+  }
+  .input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+    
+  }
+button:hover {
+    background-color: #383848;
+    color: #fff;
+    transform: scale(0.95);
+}
+button:active {
+    transform: scale(1);
+    
+}

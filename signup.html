@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/signup.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <form id="registerForm" class="signup-form">
+        <h1>EduSpark!</h1>
+        <h2><b>Create a New Account</b></h2>
+        <h4>It's quick and easy.</h4>
+        <aside>
+            <input id="name" type="text" name="name" placeholder="Full Name" required>
+            <input id="email" type="email" name="email" placeholder="Email Address" required>
+            <label for="date">Birthday:</label>
+            <input id="date" type="date" name="birthday" placeholder="Birthday" required>
+            <div class="gender-selection">
+                <label for="Male" id="lmale">Male</label>
+                <input id="Male" type="radio" name="Gender" required>
+                <label for="Female">Female</label>
+                <input id="Female" type="radio" name="Gender" required><br><br>
+               
+            </div>
+            <select name="academic year" id="academic-year">
+                <option value="academic year" disabled selected>Academic Year</option>
+                <option value="First year of secondary school">First Secondary Grde</option>
+                
+                    <option value="First year of secondary school">Second Secondary Grade</option>
+                
+                    <option value="First year of secondary school">Third Secondary Grade</option>
+                </select>
+            </select>
+            <input id="password" type="password" name="password" placeholder="New Password" required>
+            <input id="confirm_password" type="password" name="confirm_password" placeholder="Confirm Password" required>
+        </aside>
+        <button type="submit">Sign Up</button>
+        <p><a href="login.html">Already have an account?</a></p>
+    </form>
+    <script src="Javascript/signup.js"></script>
+</body>
+</html>
