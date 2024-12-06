@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            background: url("Pictures/home.webp") no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+        }
+
+        a {
+            color: rgb(218, 182, 252);
+            text-decoration: none;
+        }
+
+        h1 {
+            color: aliceblue;
+            text-align: left;
+            margin: 20px;
+        }
+
+        .course {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: rgba(158, 154, 154, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .course img {
+            width: 30%;
+            border-radius: 5px;
+        }
+
+     
+
+        .course-content h2 {
+            margin: 0 0 10px;
+        }
+
+        .course-content ul {
+            margin: 10px 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .course-content li {
+            margin-bottom: 5px;
+        }
+
+        .btn {
+            font-size: 18px;
+            padding: 10px 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            background: linear-gradient(90deg, rgba(229, 245, 82, 0.6), rgba(233, 226, 226, 0.4));
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, rgba(229, 245, 82, 1), rgba(233, 226, 226, 0.8));
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+        .primary-text{
+            color: #e4b95b;
+            font-size: large;
+        }
+        #navbar{
+    display: flex; /*to image between text*/
+    justify-content: space-between;/*final page*/
+    align-items: center;
+    
+               }
+        #navbar img{
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 0;
+                    }
+            #navbar a {
+           position: absolute; 
+           top: 5%;
+            right: 2%;
+        }
+        #navbar .academic-year{
+            position: absolute;
+            top: 20px;
+            right: 45%;
+        }
+        
+        #hr {
+            
+            margin-top: 2px;
+        }
+        #navvar #title {
+            margin-top: 2%;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+    <nav id="navbar">
+    <img src="./Pictures/logo.png" alt="EduSpark logo">
+    <p class="Profile"><a href="myProfile.html"><span class="icon"><ion-icon name="person"></ion-icon></span> My Profile</a></p>
+    <h2 class="academic-year">Third Secondary Grade</h2>
+    
+</nav>
+<hr id="hr">
+</header>
+
+    <h1 id="title">Courses</h1>
+
+    <div class="course" id="courseA">
+        <img src="Pictures/Arabic.jpg" alt="Arabic Course">
+        <div class="course-content">
+            <h2>Arabic</h2>
+            <ul>
+                <li>Explain each part in detail</li>
+                <li>Many solutions for each part</li>
+                <li>You can watch the content after subscribing</li>
+                <span class="primary-text"><li>Price: <del>400</del> 350</li></span>
+            </ul>
+            <button class="btn" onclick="openCourse('arabic.html')">Open The Course</button>
+        </div>
+    </div>
+
+    <div class="course" id="courseE">
+        <img src="Pictures/english.webp" alt="English Course">
+        <div class="course-content">
+            <h2>English</h2>
+            <ul>
+                <li>Explain each part in detail</li>
+                <li>Many solutions for each part</li>
+                <li>You can watch the content after subscribing</li>
+                <span class="primary-text"><li>Price: <del>500</del> 450</li></span>
+            </ul>
+            <button class="btn" onclick="openCourse('english.html')">Open The Course</button>
+        </div>
+    </div>
+
+    <div class="course" id="courseM">
+        <img src="Pictures/math.avif" alt="Math Course">
+        <div class="course-content">
+            <h2>Math</h2>
+            <ul>
+                <li>Explain each part in detail</li>
+                <li>Many solutions for each part</li>
+                <li>You can watch the content after subscribing</li>
+                <span class="primary-text"><li>Price: <del>600</del> 550</li></span>
+            </ul>
+            <button class="btn" onclick="openCourse('math.html')">Open The Course</button>
+        </div>
+    </div>
+
+    <div class="course" id="courseC">
+        <img src="Pictures/chemistry.jpg" alt="Chemistry Course">
+        <div class="course-content">
+            <h2>Chemistry</h2>
+            <ul>
+                <li>Explain each part in detail</li>
+                <li>Many solutions for each part</li>
+                <li>You can watch the content after subscribing</li>
+                <span class="primary-text"><li>Price: <del>400</del> 350</li></span>
+            </ul>
+            <button class="btn" onclick="openCourse('chemistry.html')">Open The Course</button>
+        </div>
+    </div>
+
+    <div class="course" id="courseP">
+        <img src="Pictures/physics.jpg" alt="Physics Course">
+        <div class="course-content">
+            <h2>Physics</h2>
+            <ul>
+                <li>Explain each part in detail</li>
+                <li>Many solutions for each part</li>
+                <li>You can watch the content after subscribing</li>
+                <span class="primary-text"><li>Price: <del>400</del> 350</li></span>
+            </ul>
+            <button class="btn" onclick="openCourse('physics.html')">Open The Course</button>
+        </div>
+    </div>
+
+    <script>
+        // Open course function
+        function openCourse(courseURL) {
+            window.location.href = courseURL;
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
